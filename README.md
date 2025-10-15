@@ -1,6 +1,5 @@
-### Calendar Fix
-
-my cal fix
+### ERPNext Calendar tz fix
+Fixes my issue with erpnext calendar https://github.com/frappe/erpnext/issues/49857
 
 ### Installation
 
