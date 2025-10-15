@@ -1,8 +1,8 @@
-app_name = "calendar_fix"
-app_title = "Calendar Fix"
-app_publisher = "Your Name"
+app_name = "erpnext_calendar_tz_fix"
+app_title = "ERPNext Calendar tz fix"
+app_publisher = "doeater"
 app_description = "Fixes calendar timezone bug"
-app_email = "your@email.com"
+app_email = "doteater@github"
 app_license = "mit"
 required_apps = ["frappe"]
 
