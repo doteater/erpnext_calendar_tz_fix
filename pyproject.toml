@@ -1,5 +1,5 @@
 [project]
-name = "calendar_fix"
+name = "erpnext_calendar_tz_fix"
 authors = [
     { name = "me", email = "cory.johnson@sentracam.com"}
 ]
