@@ -16,7 +16,7 @@ bench install-app erpnext_calendar_tz_fix
 This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
 
 ```bash
-cd apps/calendar_fix
+cd apps/erpnext_calendar_tz_fix
 pre-commit install
 ```
 

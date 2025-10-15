@@ -8,5 +8,5 @@ required_apps = ["frappe"]
 
 # Override the whitelisted method
 override_whitelisted_methods = {
-    "frappe.desk.doctype.event.event.get_events": "calendar_fix.overrides.get_events.get_events"
+    "frappe.desk.doctype.event.event.get_events": "erpnext_calendar_tz_fix.overrides.get_events.get_events"
 }

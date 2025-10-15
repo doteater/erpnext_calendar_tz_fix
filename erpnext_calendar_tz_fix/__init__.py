@@ -1,15 +1,13 @@
-# Apply the monkey patch as soon as the module is imported
-# This ensures it's active before any requests are processed
+__version__ = "0.0.1"
 
 def _apply_patch():
-    """Apply patch on module import"""
+    """Apply the monkey patch when explicitly called, not at import time"""
     try:
         from calendar_fix.patches.calendar_timezone_fix import apply_monkey_patch
         apply_monkey_patch()
-    except Exception as e:
-        # Log but don't break if patching fails
+    except ImportError:
         import frappe
-        if frappe.logger:
-            frappe.logger().error(f"Failed to apply calendar patch on import: {str(e)}")
+        # rest of the patch logic
 
-_apply_patch()
+# Don't call _apply_patch() here at module level
+# It should be called by frappe's hooks or explicitly when needed
